@@ -40,6 +40,7 @@ public class Formulario extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jLabel1.setFont(new java.awt.Font("Dialog", 1, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 153, 255));
         jLabel1.setText("FORMULARIO");
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
@@ -111,8 +112,8 @@ public class Formulario extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jbRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jbRegistrarActionPerformed
-        if (jtEmail.getText().equals("alumno@ulp.edu.ar") && jtPassword.getText().equals("12345678")) {
-            
+        if (jtEmail.getText().trim().equals("alumno@ulp.edu.ar") && jtPassword.getText().equals("12345678")) {
+            //agrego funcion trim para que no detecte los espacios iniciales y finales, 
             JOptionPane.showMessageDialog(this, "Bienvenido a la plataforma");
             
         } else {
