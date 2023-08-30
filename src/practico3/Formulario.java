@@ -44,6 +44,7 @@ public class Formulario extends javax.swing.JFrame {
         jLabel1.setText("FORMULARIO");
 
         jLabel2.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 102));
         jLabel2.setText("Email");
 
         jLabel3.setFont(new java.awt.Font("Dialog", 1, 14)); // NOI18N
